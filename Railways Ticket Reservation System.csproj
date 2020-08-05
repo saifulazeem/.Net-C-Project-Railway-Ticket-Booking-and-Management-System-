@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{564C0ABA-1607-4432-8B9E-736B5E55926E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Railways_Ticket_Reservation_System</RootNamespace>
+    <AssemblyName>Railways Ticket Reservation System</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_view.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_view.Designer.cs">
+      <DependentUpon>Admin_view.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client_view.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client_view.Designer.cs">
+      <DependentUpon>Client_view.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data_bases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data_bases.designer.cs">
+      <DependentUpon>Data_bases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Menu.Designer.cs">
+      <DependentUpon>Main_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="passenger_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="passenger_login.Designer.cs">
+      <DependentUpon>passenger_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="passenger_reservations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="passenger_reservations.Designer.cs">
+      <DependentUpon>passenger_reservations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Regstr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Regstr.designer.cs">
+      <DependentUpon>Regstr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="schedual_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="schedual_add.Designer.cs">
+      <DependentUpon>schedual_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="search_results.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search_results.designer.cs">
+      <DependentUpon>search_results.cs</DependentUpon>
+    </Compile>
+    <Compile Include="splashscreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splashscreen.Designer.cs">
+      <DependentUpon>splashscreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ticket_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ticket_info.Designer.cs">
+      <DependentUpon>ticket_info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update_passengers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_passengers.Designer.cs">
+      <DependentUpon>update_passengers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update_trains.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_trains.Designer.cs">
+      <DependentUpon>update_trains.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin_view.resx">
+      <DependentUpon>Admin_view.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client_view.resx">
+      <DependentUpon>Client_view.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data_bases.resx">
+      <DependentUpon>Data_bases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Menu.resx">
+      <DependentUpon>Main_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="passenger_login.resx">
+      <DependentUpon>passenger_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="passenger_reservations.resx">
+      <DependentUpon>passenger_reservations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Regstr.resx">
+      <DependentUpon>Regstr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schedual_add.resx">
+      <DependentUpon>schedual_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="search_results.resx">
+      <DependentUpon>search_results.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splashscreen.resx">
+      <DependentUpon>splashscreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ticket_info.resx">
+      <DependentUpon>ticket_info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_passengers.resx">
+      <DependentUpon>update_passengers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_trains.resx">
+      <DependentUpon>update_trains.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="res\4c35b261a404c4c714b33861f1749b7f.jpg" />
+    <Content Include="res\aa69f303e1905b1db2c8d526960d2b06.jpg" />
+    <Content Include="res\Trains_Mountains_Smoke_452174.jpg" />
+    <Content Include="res\wp3276758.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
